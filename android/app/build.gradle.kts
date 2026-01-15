@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
     id("com.facebook.react")
 }
 
@@ -50,9 +50,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.activity)
+    implementation("androidx.core:core-ktx:1.16.0")
+    implementation("androidx.appcompat:appcompat:1.7.0")
+    implementation("androidx.activity:activity-ktx:1.10.1")
 
     // React Native
     implementation("com.facebook.react:react-android")
