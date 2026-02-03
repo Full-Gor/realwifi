@@ -7,13 +7,6 @@ pluginManagement {
     }
 }
 
-plugins {
-    id("com.android.application") version "8.10.1" apply false
-    id("com.android.library") version "8.10.1" apply false
-    id("org.jetbrains.kotlin.android") version "2.0.21" apply false
-    id("de.undercouch.download") version "5.6.0" apply false
-}
-
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
     repositories {
@@ -23,7 +16,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("libs") {
-            from(files("gradle/libs.versions.toml"))
+            from(files("../node_modules/react-native/gradle/libs.versions.toml"))
         }
     }
 }
