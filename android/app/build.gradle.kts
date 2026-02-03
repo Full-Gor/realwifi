@@ -18,6 +18,9 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
+
+        buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", project.property("newArchEnabled").toString())
+        buildConfigField("boolean", "IS_HERMES_ENABLED", project.property("hermesEnabled").toString())
     }
 
     buildTypes {
