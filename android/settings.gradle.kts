@@ -1,5 +1,7 @@
 pluginManagement {
-    includeBuild("../node_modules/@react-native/gradle-plugin")
+    includeBuild("../node_modules/@react-native/gradle-plugin") {
+        name = "react-native-gradle-plugin"
+    }
     repositories {
         google()
         mavenCentral()
@@ -13,11 +15,6 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
-    }
-    versionCatalogs {
-        create("libs") {
-            from(files("../node_modules/react-native/gradle/libs.versions.toml"))
-        }
     }
 }
 
