@@ -192,7 +192,6 @@ const MAC_VENDORS: Record<string, string> = {
   '00:1E:8F': 'Canon',
   '18:0C:AC': 'Canon',
   '48:F8:B3': 'Canon',
-  '00:00:48': 'HP',
   '00:0B:CD': 'HP',
   '00:14:38': 'HP',
   '00:18:FE': 'HP',

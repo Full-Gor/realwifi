@@ -89,12 +89,11 @@ export const storageService = {
         deviceType: device.deviceType || 'unknown',
         isFavorite: false,
         isTrusted: false,
-        customName: undefined,
-        notes: undefined,
+        customName: device.customName,
+        notes: device.notes,
         firstSeen: now,
         lastSeen: now,
         isOnline: true,
-        ...device,
       };
       devices.push(newDevice);
       await this.saveDevices(devices);
